@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Max width and Display</title>
+    <style>
+        .box1{
+            background-color: gray;
+            min-width: none;
+            width: 50%;
+            height:60px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .box1 .box2{
+            background-color:red;
+            width: 50%;
+            height: 30px;
+            
+        }
+        a{
+            text-decoration: none;
+        }
+        .face{
+            color:white;
+            font-size: 1.5em;
+            display: inline-block;
+            background-color:rgb(4, 83, 187);
+            padding: 10px;
+            border-radius: 50%;
+        }
+        .face:hover{
+            background-color: white;
+            color: blue;
+            border: 1px solid blue;
+            border-radius: 50%;
+        }
+  /*      a:link{
+            color: green;
+        }
+        
+        a:visited{
+            color: black;
+        }
+
+        a:active{
+            color: pink;
+        }
+        */
+
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box2">
+
+        </div>
+    </div>
+    <a href="https://www.google.com" target="_blank">This is link</a> <br>
+    <a href="https://youtube.com"> link2</a> <br>
+    <a class="face" href="https://facebook.com" target="_blank">FaceBook</a>
+</body>
+</html>

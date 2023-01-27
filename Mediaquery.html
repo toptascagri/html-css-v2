@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+        /*
+        body{
+            background-color: red;
+        }
+        p{
+            display: none;
+        }
+
+        @media (max-width:768px) {
+            body{
+                background-color: blue;
+            }
+        }
+
+        @media(min-width:768px){
+            p{
+                display: block;
+            }
+        }
+        */
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            max-width: 1100px;
+            display: flex;
+            margin: 0 auto;
+            flex-wrap: wrap;
+
+        }
+        .box{
+            border: 1px solid black;
+            background-color: blue;
+            padding: 10px;
+            width: 25%;
+        }
+
+       @media (max-width: 768px) {
+        .box{
+            width: 50%;
+        }
+       }
+        
+       @media (max-width: 500px) {
+        .box{
+            width: 100%;
+        }
+    }
+     
+    </style>
+</head>
+<body>
+<!--  
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque sapiente recusandae possimus unde deserunt! Quos, voluptates natus! Obcaecati magni quisquam, distinctio voluptas saepe error repellat, quaerat explicabo nisi necessitatibus suscipit nemo odio repudiandae velit. Dolores doloremque in ullam? Delectus nostrum placeat cumque aspernatur quas, voluptatum magnam libero. In earum consectetur quas hic asperiores velit autem, delectus magnam consequuntur architecto expedita laboriosam labore deleniti ex aliquam odit et id! A veritatis omnis nobis ut explicabo eligendi aut et necessitatibus. Voluptate aliquid nisi nihil nostrum sit atque magni porro a aperiam expedita debitis at quas, rem iusto libero amet corporis, eligendi est.</p>
+-->
+
+<div class="container">
+    <div class="box">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, voluptates.</p>
+    </div>
+    <div class="box">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, voluptates.</p>
+    </div>
+    <div class="box">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, voluptates.</p>
+    </div>
+    <div class="box">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, voluptates.</p>
+    </div>
+
+</div>
+</body>
+</html>
